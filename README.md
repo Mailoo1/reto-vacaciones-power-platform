@@ -117,7 +117,7 @@ Conecta Power Apps con la API: esquema HTTPS, ruta `/api/dias-habiles`, método 
 | Flujo | Disparador | Acción |
 |---|---|---|
 | **Flujo1 - Notificacion de recepcion** | Al crearse un elemento en `Solicitudes` | Envía un correo al aprobador con los datos de la solicitud |
-| **Flujo2 - Recordatorio pendientes** | Programado, una vez al día a las 8:00 (hora de Bogotá) | Obtiene las solicitudes `Pendiente` creadas hace más de 24 horas y envía un recordatorio al aprobador de cada una |
+| **Flujo2 - Recordatorio pendientes** | Programado, una vez al día| Obtiene las solicitudes `Pendiente` creadas hace más de 24 horas y envía un recordatorio al aprobador de cada una |
 
 ## Solución exportada
 
