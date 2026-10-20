@@ -1,3 +1,10 @@
+// =====================================================================================
+// IBusinessDaysCalculator.cs - EL "CONTRATO" DEL CÁLCULO
+// -------------------------------------------------------------------------------------
+// Una interfaz dice QUÉ se puede hacer, sin decir CÓMO. La función HTTP solo conoce este
+// contrato; la implementación real está en BusinessDaysCalculator. Esto permite cambiar o
+// probar el cálculo sin tocar el endpoint.
+// =====================================================================================
 namespace VacacionesApi.Services;
 
 public interface IBusinessDaysCalculator

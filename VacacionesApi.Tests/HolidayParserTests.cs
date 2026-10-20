@@ -1,3 +1,8 @@
+// =====================================================================================
+// HolidayParserTests.cs - PRUEBAS DE LA LECTURA DE FESTIVOS CONFIGURADOS
+// -------------------------------------------------------------------------------------
+// Comprueban que el texto de la variable "Holidays" se convierte bien en fechas.
+// =====================================================================================
 using VacacionesApi.Services;
 using Xunit;
 
@@ -5,6 +10,8 @@ namespace VacacionesApi.Tests;
 
 public class HolidayParserTests
 {
+    // Un [Theory] repite la misma prueba con varios valores. Aquí: nulo, vacío y solo espacios
+    // deben dar una lista vacía (3 pruebas en una).
     [Theory]
     [InlineData(null)]
     [InlineData("")]
@@ -14,6 +21,7 @@ public class HolidayParserTests
         Assert.Empty(HolidayParser.Parse(value));
     }
 
+    // Dos fechas separadas por coma (con un espacio de más) deben convertirse en dos fechas.
     [Fact]
     public void CommaSeparatedValue_ReturnsDates()
     {
